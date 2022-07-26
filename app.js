@@ -200,7 +200,7 @@ app.post("/login", function(req, response){
 
 
 
-
-app.listen(3000, function() {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function() {
   console.log("Server started at port 3000.");
 })
